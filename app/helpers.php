@@ -43,7 +43,16 @@ function getAppLogoUrl(): string
         $appLogo = SadminSetting::where('key', 'app_logo')->first();
     }
 
-    return $appLogo->value ?? asset('images/logo.png');
+    $value = $appLogo->value ?? null;
+
+    if ($value) {
+        if (!preg_match('/^https?:\/\//', $value)) {
+            return asset($value);
+        }
+        return $value;
+    }
+
+    return asset('images/logo.png');
 }
 
 function getAppFaviconUrl(): string
