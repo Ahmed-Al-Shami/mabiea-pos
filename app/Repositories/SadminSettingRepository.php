@@ -64,8 +64,15 @@ class SadminSettingRepository extends BaseRepository
                 $setting->clearMediaCollection(SadminSetting::LOGO);
                 $media = $setting->addMedia($input['app_logo'])->toMediaCollection(SadminSetting::LOGO, config('app.media_disc'));
                 $setting = $setting->refresh();
-                $setting->update(['value' => $media->getFullUrl()]);
-            }
+                $mediaUrl = $media->getFullUrl();
+
+                $mediaUrl = str_replace(
+                    ['http://localhost', 'http://127.0.0.1:8000'],
+                    config('app.url'),
+                    $mediaUrl
+                );
+                
+                $setting->update(['value' => $mediaUrl]);            }
             if (isset($input['app_favicon']) && !empty($input['app_favicon'])) {
                 /** @var SadminSetting $setting */
                 $setting = SadminSetting::where('key', 'app_favicon')->first();
@@ -75,8 +82,15 @@ class SadminSettingRepository extends BaseRepository
                 $setting->clearMediaCollection(SadminSetting::FAVICON);
                 $media = $setting->addMedia($input['app_favicon'])->toMediaCollection(SadminSetting::FAVICON, config('app.media_disc'));
                 $setting = $setting->refresh();
-                $setting->update(['value' => $media->getFullUrl()]);
-            }
+                $mediaUrl = $media->getFullUrl();
+
+                $mediaUrl = str_replace(
+                    ['http://localhost', 'http://127.0.0.1:8000'],
+                    config('app.url'),
+                    $mediaUrl
+                );
+                
+                $setting->update(['value' => $mediaUrl]);            }
 
             $settingInputArray = Arr::only($input, [
                 'app_name',
