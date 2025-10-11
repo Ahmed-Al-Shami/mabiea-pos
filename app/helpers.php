@@ -46,11 +46,10 @@ function getAppLogoUrl(): string
     $value = $appLogo->value ?? null;
 
     if ($value) {
-        if (!preg_match('/^https?:\/\//', $value)) {
-            return asset($value);
-        }
+      
         return $value;
     }
+
 
     return asset('images/logo.png');
 }

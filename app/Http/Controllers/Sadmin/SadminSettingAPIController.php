@@ -61,6 +61,7 @@ class SadminSettingAPIController extends AppBaseController
     {
 
         $input = $request->all();
+        
         $settings = $this->sadminSettingRepository->updateSettings($input);
 
         return $this->sendResponse(
