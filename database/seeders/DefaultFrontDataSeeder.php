@@ -14,19 +14,19 @@ use Illuminate\Support\Facades\Storage;
 class DefaultFrontDataSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * تنفيذ الـ seeds لقاعدة البيانات.
      */
     public function run(): void
     {
-        // Hero Section
+        // قسم البطل (Hero Section)
         $keyName = [
             'hero_image' => ('images/default/hero-img.png'),
-            'hero_title' => 'Seamless Cloud-Based Warehouse & Inventory Management',
-            'hero_description' => 'Effortlessly manage multiple warehouses with a powerful, cloud-based POS system. Track inventory, streamline operations, and optimize sales across all locations in real time.',
-            'partner_main_title' => 'Trusted by Top Businesses',
-            'partner_description' => 'POS simplifies multi-warehouse management with advanced tracking, real-time inventory updates, and seamless operations. Join businesses that rely on our technology for smarter and more efficient stock control.',
-            'contact_us_main_title' => 'Get in Touch with Us',
-            'contact_us_description' => 'Interested in learning more about POS, requesting a quote, or speaking with an expert? Let us know your needs, and we’ll get back to you soon.',
+            'hero_title' => 'إدارة المخازن والمخزون السحابية بسلاسة',
+            'hero_description' => 'قم بإدارة عدة مخازن بسهولة باستخدام نظام نقاط بيع سحابي قوي. تتبع المخزون، تبسيط العمليات، وتحسين المبيعات في جميع المواقع بشكل لحظي.',
+            'partner_main_title' => 'موثوق به من أفضل الشركات',
+            'partner_description' => 'POS يبسط إدارة المخازن المتعددة مع تتبع متقدم، تحديثات المخزون في الوقت الحقيقي، وعمليات سلسة. انضم إلى الشركات التي تعتمد على تقنيتنا للتحكم الذكي بالمخزون.',
+            'contact_us_main_title' => 'تواصل معنا',
+            'contact_us_description' => 'هل ترغب في معرفة المزيد عن نظام POS، طلب عرض أسعار، أو التحدث مع خبير؟ أبلغنا باحتياجاتك وسنرد عليك قريبًا.',
             'facebook' => "https://facebook.com/",
             'twitter' => "https://x.com/",
             'linkedin' => "https://linkedin.com/",
@@ -38,32 +38,32 @@ class DefaultFrontDataSeeder extends Seeder
             );
         }
 
-        // Services
+        // الخدمات
         $services = [
             [
                 'image' => 'images/default/services-1.png',
-                'title' => 'Real-Time Inventory',
-                'description' => 'Effortlessly track stock levels across multiple warehouses in real time with our cloud-based system. Get automated inventory updates to prevent overstocking or stockouts and ensure smooth operations at every location.',
+                'title' => 'مخزون لحظي',
+                'description' => 'تتبع مستويات المخزون عبر عدة مخازن في الوقت الحقيقي باستخدام نظامنا السحابي. احصل على تحديثات تلقائية لتجنب الفائض أو النفاد وضمان سلاسة العمليات في كل موقع.',
             ],
             [
                 'image' => 'images/default/services-2.png',
-                'title' => 'Easy Transfers',
-                'description' => 'Easily transfer stock between warehouses with just a few clicks. Update inventory adjustments instantly to maintain accuracy and prevent discrepancies across different locations.',
+                'title' => 'تحويلات سهلة',
+                'description' => 'قم بنقل المخزون بين المخازن بسهولة بنقرات قليلة. حدّث المخزون فورًا للحفاظ على الدقة وتجنب التناقضات بين المواقع المختلفة.',
             ],
             [
                 'image' => 'images/default/services-3.png',
-                'title' => 'Sales & Purchases',
-                'description' => 'Stay on top of your purchases and sales across multiple warehouses. Monitor transactions, analyze sales data, and optimize inventory levels to meet customer demand efficiently.',
+                'title' => 'المبيعات والمشتريات',
+                'description' => 'تابع مشترياتك ومبيعاتك عبر المخازن المختلفة. راقب المعاملات، حلل بيانات المبيعات، وحسّن مستويات المخزون لتلبية طلب العملاء بكفاءة.',
             ],
             [
                 'image' => 'images/default/services-4.png',
-                'title' => 'User Access Control',
-                'description' => 'Enhance security and efficiency by assigning custom roles and permissions to your team. Ensure only authorized staff can make inventory adjustments, process transactions, or access critical data.',
+                'title' => 'التحكم في صلاحيات المستخدم',
+                'description' => 'عزز الأمان والكفاءة من خلال تخصيص الأدوار والصلاحيات لفريقك. تأكد من أن الموظفين المخولين فقط يمكنهم تعديل المخزون أو معالجة المعاملات أو الوصول للبيانات الحيوية.',
             ],
             [
                 'image' => 'images/default/services-5.png',
-                'title' => 'Flexible Payments',
-                'description' => 'Offer seamless transactions with support for Stripe, Razorpay, PayPal, and manual payments. Provide flexible and secure payment solutions for customers, vendors, and suppliers.',
+                'title' => 'مدفوعات مرنة',
+                'description' => 'قدّم معاملات سلسة بدعم من Stripe، Razorpay، PayPal، والمدفوعات اليدوية. وفر حلول دفع مرنة وآمنة للعملاء والبائعين والموردين.',
             ]
         ];
 
@@ -79,28 +79,27 @@ class DefaultFrontDataSeeder extends Seeder
             }
         }
 
-
-        // WhyChooseUs
+        // لماذا تختارنا (WhyChooseUs)
         $whyChooseUsData = [
             [
                 'image' => 'images/default/choose-1.png',
-                'title' => 'Centralized Warehouse Management',
-                'description' => '<p>Boost your sales with our easy-to-use Cloud based POS Solution. Effortlessly check out customers with our state-of-the-art cloud based point of sale Software. Get paid faster, secure more credit card sales, and achieve a competitive edge. Boost sales and revenue with our powerful SaaS POS software.</p>',
+                'title' => 'إدارة المخازن المركزية',
+                'description' => '<pعزز مبيعاتك باستخدام نظام POS السحابي السهل الاستخدام. قم بإتمام عمليات العملاء بسهولة مع برنامج نقاط البيع المتطور. احصل على المدفوعات بسرعة، وزد من مبيعات بطاقات الائتمان، وتمتع بميزة تنافسية.</p>',
             ],
             [
                 'image' => 'images/default/choose-2.png',
-                'title' => 'Real-Time Stock Updates',
-                'description' => '<p>Ignite explosive growth with POS\'s fully integrated customer loyalty program. Track, reward, and excite your customers with personalized promotions. Scale your business effortlessly by adding new locations and registers. Don\'t just dream big, make it happen. Unleash your potential and conquer the market with our innovative POS SaaS solutions.</p>',
+                'title' => 'تحديثات المخزون لحظية',
+                'description' => '<pحقق نموًا سريعًا مع برنامج ولاء العملاء المتكامل في POS. تتبع، وكافئ، وألهم عملاءك بعروض مخصصة. وسّع أعمالك بسهولة بإضافة مواقع جديدة. اجعل أحلامك الكبيرة حقيقة مع حلول POS السحابية المبتكرة.</p>',
             ],
             [
                 'image' => 'images/default/choose-3.png',
-                'title' => 'Secure & Scalable',
-                'description' => '<p>Effortlessly Manage Your Inventory with Cloud-Based Precision. Our Industry-Leading Module Simplifies Cloud Inventory management Allowing You to Stay in Control and Optimize Stock Levels with Ease. Set Up Automatic Alerts, Print Labels, and barcodes seamlessly with our cutting-edge&nbsp;Cloud Based Point of Sale technology Maximize Your Profits, Minimize Your Worries.</p>',
+                'title' => 'آمن وقابل للتوسع',
+                'description' => '<pقم بإدارة مخزونك بسهولة بدقة سحابية. يسهّل نظامنا المتقدم إدارة المخزون السحابي، مع تنبيهات تلقائية وطباعة ملصقات وبطاقات باركود. عزز أرباحك وقلل المخاطر مع تقنية POS السحابية.</p>',
             ],
             [
                 'image' => 'images/default/choose-4.png',
-                'title' => 'Flexible Payment Options',
-                'description' => '<p>With POS, get instant issue resolution and expert guidance, 24/7. We’re always here to keep your business running smoothly.</p><ul><li>24/7 Availability</li><li>Dedicated Support Team</li><li>Quick Issue Resolution</li></ul>',
+                'title' => 'خيارات دفع مرنة',
+                'description' => '<pمع POS، احصل على دعم فوري وإرشادات الخبراء على مدار الساعة. نحن دائمًا هنا لضمان سير أعمالك بسلاسة.</p><ul><li>متاح 24/7</li><li>فريق دعم مخصص</li><li>حل المشكلات بسرعة</li></ul>',
             ],
         ];
 
@@ -116,7 +115,7 @@ class DefaultFrontDataSeeder extends Seeder
             }
         }
 
-        // Partners
+        // الشركاء
         $partners = [
             [
                 'image' => 'images/default/partner-1.png',
@@ -147,33 +146,32 @@ class DefaultFrontDataSeeder extends Seeder
             }
         }
 
-
-        // Testimonials
+        // شهادات العملاء (Testimonials)
         $testimonials = [
             [
                 'image' => 'images/default/testimonial-1.png',
-                'name' => 'David R.',
-                'description' => 'POS has completely transformed how we manage our warehouses! The real-time inventory updates help us avoid stock shortages, and the centralized dashboard makes everything so easy to track.',
+                'name' => 'ديفيد ر.',
+                'description' => 'نظام POS غيّر تمامًا طريقة إدارة مخازننا! التحديثات اللحظية للمخزون تساعدنا على تجنب النقص، ولوحة التحكم المركزية تجعل كل شيء سهل المتابعة.',
             ],
             [
                 'image' => 'images/default/testimonial-2.png',
-                'name' => 'Sarah M.',
-                'description' => 'We used to struggle with stock discrepancies across multiple locations. Thanks to POS, we now have seamless warehouse transfers and accurate stock reports.',
+                'name' => 'سارة م.',
+                'description' => 'كنا نعاني من فروقات المخزون بين المواقع. بفضل POS، أصبح لدينا نقل سلس للمخزون وتقارير دقيقة.',
             ],
             [
                 'image' => 'images/default/testimonial-3.png',
-                'name' => 'Michael T.',
-                'description' => 'The best part about POS is the flexible payment options. Our customers can now pay via Stripe, Razorpay, or PayPal, making transactions smoother and faster!',
+                'name' => 'مايكل ت.',
+                'description' => 'أفضل شيء في POS هو خيارات الدفع المرنة. عملاؤنا يمكنهم الدفع عبر Stripe أو Razorpay أو PayPal بسهولة!',
             ],
             [
                 'image' => 'images/default/testimonial-4.png',
-                'name' => 'Emily J.',
-                'description' => 'Security and role-based access are game-changers! We can assign specific permissions to staff, ensuring only authorized personnel handle stock adjustments and transactions.',
+                'name' => 'إميلي ج.',
+                'description' => 'الأمان والتحكم في الصلاحيات ميزة كبيرة! يمكننا تخصيص صلاحيات الموظفين لضمان التعامل مع المخزون فقط من قبل المخولين.',
             ],
             [
                 'image' => 'images/default/testimonial-5.png',
-                'name' => 'James L.',
-                'description' => 'Since switching to POS, we’ve seen a 30% improvement in order fulfillment speed. The automation features save us time and reduce errors.',
+                'name' => 'جيمس ل.',
+                'description' => 'منذ التحول إلى POS، شهدنا تحسنًا بنسبة 30% في سرعة تنفيذ الطلبات. الميزات التلقائية توفر الوقت وتقلل الأخطاء.',
             ],
         ];
 
@@ -189,59 +187,59 @@ class DefaultFrontDataSeeder extends Seeder
             }
         }
 
-        // FAQs
+        // الأسئلة الشائعة (FAQs)
         $faqs = [
             [
-                'title' => 'How do I get started?',
-                'description' => 'Simply contact us via our website, and our team will guide you through the onboarding process.',
+                'title' => 'كيف أبدأ؟',
+                'description' => 'ببساطة اتصل بنا عبر موقعنا الإلكتروني، وسيرشدك فريقنا خلال عملية البدء.',
             ],
             [
-                'title' => 'Do you provide custom packaging and labeling?',
-                'description' => 'Yes, we offer custom packaging, labeling, and branding services for your products.',
+                'title' => 'هل تقدمون تغليفًا وتوسيمًا مخصصًا؟',
+                'description' => 'نعم، نقدم خدمات التغليف والتوسيم والعلامات التجارية المخصصة لمنتجاتك.',
             ],
             [
-                'title' => 'Are there any hidden fees?',
-                'description' => 'No, we believe in transparent pricing. All costs are discussed upfront before you commit.',
+                'title' => 'هل توجد رسوم خفية؟',
+                'description' => 'لا، نحن نؤمن بالشفافية. جميع التكاليف يتم مناقشتها مسبقًا قبل الالتزام.',
             ],
             [
-                'title' => 'What payment methods do you accept?',
-                'description' => 'We accept major credit cards, bank transfers, and online payment gateways.',
+                'title' => 'ما طرق الدفع المقبولة؟',
+                'description' => 'نقبل بطاقات الائتمان الرئيسية، التحويلات البنكية، وبوابات الدفع الإلكترونية.',
             ],
             [
-                'title' => 'Do you have minimum storage requirements?',
-                'description' => 'We offer flexible storage solutions with no long-term commitments. Contact us for specific details.',
+                'title' => 'هل توجد متطلبات تخزين دنيا؟',
+                'description' => 'نقدم حلول تخزين مرنة بدون التزامات طويلة الأجل. اتصل بنا لمزيد من التفاصيل.',
             ],
             [
-                'title' => 'How much does warehousing cost?',
-                'description' => 'Pricing depends on the storage space required, duration, and additional services. Contact us for a customized quote.',
+                'title' => 'كم تكلفة التخزين؟',
+                'description' => 'تختلف التكلفة حسب مساحة التخزين المطلوبة، المدة، والخدمات الإضافية. اتصل بنا للحصول على عرض مخصص.',
             ],
             [
-                'title' => 'Do you handle order fulfillment?',
-                'description' => 'Yes, we offer pick, pack, and shipping services to ensure your orders are delivered efficiently.',
+                'title' => 'هل تديرون تنفيذ الطلبات؟',
+                'description' => 'نعم، نقدم خدمات التجميع، التغليف، والشحن لضمان تسليم طلباتك بكفاءة.',
             ],
             [
-                'title' => 'Do you offer climate-controlled storage?',
-                'description' => 'Yes, we provide temperature-controlled storage solutions for perishable and sensitive goods.',
+                'title' => 'هل تقدمون تخزينًا بدرجة حرارة محكومة؟',
+                'description' => 'نعم، نوفر حلول تخزين بدرجة حرارة محكومة للمنتجات الحساسة والقابلة للتلف.',
             ],
             [
-                'title' => 'Is my inventory secure in your warehouse?',
-                'description' => 'Yes! Our warehouse is equipped with 24/7 surveillance, restricted access, and advanced security systems to ensure the safety of your goods.',
+                'title' => 'هل مخزوني آمن في مستودعاتكم؟',
+                'description' => 'نعم! مستودعاتنا مجهزة بمراقبة 24/7، وصول محدود، وأنظمة أمان متقدمة لضمان سلامة البضائع.',
             ],
             [
-                'title' => 'What types of products can I store in your warehouse?',
-                'description' => 'We accommodate a wide range of products, including retail goods, electronics, perishable items, and more. Please contact us for specific storage requirements.',
+                'title' => 'ما أنواع المنتجات التي يمكن تخزينها؟',
+                'description' => 'نستوعب مجموعة واسعة من المنتجات، بما في ذلك السلع التجزئة، الإلكترونيات، المواد القابلة للتلف، والمزيد. يرجى التواصل للحصول على متطلبات محددة.',
             ],
             [
-                'title' => 'How do I contact customer support?',
-                'description' => 'You can reach us via email at [labs@infyom.in], or through our online contact form.',
+                'title' => 'كيف أتواصل مع دعم العملاء؟',
+                'description' => 'يمكنك التواصل معنا عبر البريد الإلكتروني [labs@infyom.in] أو من خلال نموذج الاتصال عبر الإنترنت.',
             ],
             [
-                'title' => 'What are your operating hours?',
-                'description' => 'However, we offer 24/7 support for urgent logistics needs.',
+                'title' => 'ما هي ساعات العمل؟',
+                'description' => 'نوفر دعمًا طارئًا 24/7 لجميع احتياجات اللوجستيات العاجلة.',
             ],
             [
-                'title' => 'What services do you offer?',
-                'description' => 'We provide warehousing, inventory management, order fulfillment, and logistics solutions tailored to your business needs.',
+                'title' => 'ما الخدمات التي تقدمونها؟',
+                'description' => 'نقدم حلول التخزين، إدارة المخزون، تنفيذ الطلبات، والخدمات اللوجستية المصممة وفق احتياجات عملك.',
             ],
         ];
 
