@@ -958,6 +958,7 @@
     "pos.payment.total.exceeds.grand.total.error": "إجمالي مبلغ الدفع يتجاوز الإجمالي الكلي",
     "globally.detail.payment.details": "تفاصيل الدفع",
     "create.payment.methods.title": "إضافة طريقة دفع",
+    "payment.methods.title": " طريقة دفع",
     "edit.payment.methods.title": "تعديل طريقة الدفع",
     "payment.method.save.success.message":"تم إنشاء طريقة الدفع بنجاح",
     "payment.method.edit.success.message":"تم تعديل طريقة الدفع بنجاح",
