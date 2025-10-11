@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Support\UrlGenerator\FixedUrlGenerator;
 use Illuminate\Support\ServiceProvider;
+use Spatie\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,5 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+
     }
 }
