@@ -66,15 +66,13 @@ Route::get('/check-mail2', function() {
 });
 
 Route::get('/env-check', function() {
-    return [
-        'app_env' => env('APP_ENV'),
-        'mail_host' => env('MAIL_HOST'),
-        'mail_username' => env('MAIL_USERNAME'),
-        'mail_port' => env('MAIL_PORT'),
-        'mail_encryption' => env('MAIL_ENCRYPTION'),
-        'config_mail_host' => config('mail.mailers.smtp.host'),
-        'config_mail_username' => config('mail.mailers.smtp.username'),
-        'config_mail_port' => config('mail.mailers.smtp.port'),
-        'config_mail_encryption' => config('mail.mailers.smtp.encryption'),
-    ];
+    try {
+        Mail::raw('Test email', function($message){
+            $message->to('ahmed114747ed@gmail.com')
+                    ->subject('Test Mail');
+        });
+        Log::info('Mail sent successfully.');
+    } catch (\Exception $e) {
+        Log::error('Mail failed: '.$e->getMessage());
+    }
 });
