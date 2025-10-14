@@ -152,7 +152,7 @@ class AuthController extends AppBaseController
             $sadminSettingRow = SadminSetting::where('key', 'send_registration_mail')->first();
             $sadminSetting = $sadminSettingRow ? filter_var($sadminSettingRow->value, FILTER_VALIDATE_BOOLEAN) : true;
             if ($sadminSetting) {
-                $user->sendEmailVerificationNotification();
+                // $user->sendEmailVerificationNotification();
             } else {
                 $user->email_verified_at = now();
                 $user->save();
