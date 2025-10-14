@@ -36,12 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'url' => env('MAIL_URL'),
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'host' => env('MAIL_HOST', 'mail.dotlaa.com'),       // SMTP host
+            'port' => env('MAIL_PORT', 465),                    // SMTP port
+            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),      // SSL
+            'username' => env('MAIL_USERNAME', 'mabiea-pos@dotlaa.com'), // البريد الإلكتروني
+            'password' => env('MAIL_PASSWORD', 'cor7581_mabiea'),        // كلمة المرور
             'timeout' => null,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
