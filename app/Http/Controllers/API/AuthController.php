@@ -167,7 +167,10 @@ class AuthController extends AppBaseController
             return $this->sendResponse($success, 'User registered successfully');
         } catch (\Exception $e) {
             DB::rollBack();
-
+            \Log::error('Error in email verification: '.$e->getMessage(), [
+                'user_id' => $user->id,
+                'trace' => $e->getTraceAsString()
+            ]);
             return $this->sendError($e->getMessage());
         }
     }
