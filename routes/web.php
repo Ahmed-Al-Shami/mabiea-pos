@@ -60,3 +60,7 @@ include 'upgrade.php';
 Route::get('/check-mail', function() {
     return env('MAIL_HOST');
 });
+
+Route::get('/check-mail2', function() {
+    return config('mail.mailers.smtp.host');
+});
