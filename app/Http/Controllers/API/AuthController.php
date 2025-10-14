@@ -89,9 +89,9 @@ class AuthController extends AppBaseController
             return $this->sendError(__('messages.error.invalid_username_password'), 422);
         }
 
-        // if ($user->email_verified_at == null) {
-        //     return $this->sendError(__('messages.error.email_not_verified'), 422);
-        // }
+        if ($user->email_verified_at == null) {
+            return $this->sendError(__('messages.error.email_not_verified'), 422);
+        }
 
         if (!$user->status) {
             return $this->sendError(__('messages.error.status_inactive'), 422);
@@ -151,12 +151,12 @@ class AuthController extends AppBaseController
 
             $sadminSettingRow = SadminSetting::where('key', 'send_registration_mail')->first();
             $sadminSetting = $sadminSettingRow ? filter_var($sadminSettingRow->value, FILTER_VALIDATE_BOOLEAN) : true;
-            // if ($sadminSetting) {
-            //     $user->sendEmailVerificationNotification();
-            // } else {
-            //     $user->email_verified_at = now();
-            //     $user->save();
-            // }
+            if ($sadminSetting) {
+                $user->sendEmailVerificationNotification();
+            } else {
+                $user->email_verified_at = now();
+                $user->save();
+            }
 
             App::make(AdminRepository::class)->defaultSettings($tenant->id);
 
