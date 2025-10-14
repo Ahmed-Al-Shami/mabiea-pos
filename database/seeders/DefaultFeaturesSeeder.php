@@ -10,53 +10,54 @@ use Illuminate\Database\Seeder;
 class DefaultFeaturesSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * تنفيذ بيانات افتراضية للميزات والخطوات.
      */
     public function run(): void
     {
+        // الميزات
         $features = [
             [
                 'image' => 'images/default/feature-1.png',
-                'title' => 'Streamline Your Operations',
-                'description' => 'Efficiently optimize your retail operations with our streamlined cloud-based solutions.',
+                'title' => 'تبسيط عملياتك',
+                'description' => 'قم بتحسين عمليات البيع بالتجزئة بكفاءة باستخدام حلولنا السحابية المبسطة.',
                 'points' => [
-                    'Cloud-based POS solution',
-                    'Eliminate manual processes',
-                    'Reduce errors',
-                    'Focus on serving customers and growing business',
+                    'حل نقاط بيع سحابي',
+                    'إلغاء العمليات اليدوية',
+                    'تقليل الأخطاء',
+                    'التركيز على خدمة العملاء وتنمية الأعمال',
                 ],
             ],
             [
                 'image' => 'images/default/feature-2.png',
-                'title' => 'Efficient Inventory Management',
-                'description' => 'Keep track of your stock levels and ensure smooth inventory operations across multiple locations.',
+                'title' => 'إدارة المخزون بكفاءة',
+                'description' => 'تابع مستويات المخزون لديك وتأكد من سلاسة عمليات المخزون عبر مواقع متعددة.',
                 'points' => [
-                    'Real-time stock tracking',
-                    'Low-stock alerts and notifications',
-                    'Easy product categorization',
-                    'Manual stock adjustments',
+                    'تتبع المخزون في الوقت الحقيقي',
+                    'تنبيهات ونقص المخزون',
+                    'تصنيف المنتجات بسهولة',
+                    'تعديلات المخزون يدويًا',
                 ],
             ],
             [
                 'image' => 'images/default/feature-3.png',
-                'title' => '24/7 Support & Assistance',
-                'description' => 'Get round-the-clock support to ensure your business never faces downtime.',
+                'title' => 'دعم ومساعدة 24/7',
+                'description' => 'احصل على دعم متواصل لضمان عدم توقف عملك في أي وقت.',
                 'points' => [
-                    'Dedicated customer success team',
-                    'Email and phone support',
-                    'Comprehensive knowledge base and FAQs',
-                    'Regular system updates and security patches',
+                    'فريق دعم عملاء مخصص',
+                    'دعم عبر البريد الإلكتروني والهاتف',
+                    'قاعدة معرفية شاملة وأسئلة متكررة',
+                    'تحديثات منتظمة للنظام وتصحيحات الأمان',
                 ],
             ],
             [
                 'image' => 'images/default/feature-4.png',
-                'title' => 'Multi-Warehouse Management',
-                'description' => 'Efficiently manage inventory across multiple warehouses with advanced tracking and automation.',
+                'title' => 'إدارة متعددة للمخازن',
+                'description' => 'قم بإدارة المخزون بكفاءة عبر عدة مخازن مع تتبع متقدم وأتمتة ذكية.',
                 'points' => [
-                    'Centralized inventory visibility',
-                    'Stock allocation and transfers',
-                    'Warehouse-specific reporting and analytics',
-                    'Multi-location order fulfillment',
+                    'رؤية مركزية للمخزون',
+                    'تخصيص وتحويل المخزون',
+                    'تقارير وتحليلات لكل مخزن',
+                    'تنفيذ الطلبات عبر مواقع متعددة',
                 ],
             ],
         ];
@@ -74,30 +75,31 @@ class DefaultFeaturesSeeder extends Seeder
             }
         }
 
+        // خطوات الاستخدام
         $steps = [
             [
                 'image' => 'images/default/step-1.png',
-                'sub_title' => 'Step 1',
-                'title' => 'Register Your Business',
-                'description' => 'Sign up on POS by providing your business details. Set up your account with company information, preferred currency, and tax settings.',
+                'sub_title' => 'الخطوة 1',
+                'title' => 'سجل نشاطك التجاري',
+                'description' => 'قم بالتسجيل في POS عن طريق تقديم تفاصيل عملك. اضبط حسابك بمعلومات الشركة، العملة المفضلة، وإعدادات الضرائب.',
             ],
             [
                 'image' => 'images/default/step-2.png',
-                'sub_title' => 'Step 2',
-                'title' => 'Configure your store',
-                'description' => 'Add multiple warehouses in POS. Add stocks and limits to each warehouse for efficient inventory tracking.',
+                'sub_title' => 'الخطوة 2',
+                'title' => 'إعداد متجرك',
+                'description' => 'أضف عدة مخازن في POS. أضف المخزون والحدود لكل مخزن لضمان تتبع فعال للمخزون.',
             ],
             [
                 'image' => 'images/default/step-3.png',
-                'sub_title' => 'Step 3',
-                'title' => 'Import Data',
-                'description' => 'Easily import supplier and customer data into POS. Sync existing records or add new ones to streamline procurement and order management.',
+                'sub_title' => 'الخطوة 3',
+                'title' => 'استيراد البيانات',
+                'description' => 'قم بسهولة باستيراد بيانات الموردين والعملاء إلى POS. مزامنة السجلات الحالية أو إضافة جديدة لتسهيل إدارة الطلبات والمشتريات.',
             ],
             [
                 'image' => 'images/default/step-4.png',
-                'sub_title' => 'Step 4',
-                'title' => 'Automate Inventory',
-                'description' => 'Enable automatic stock updates, warehouse-based stocks, and smart inventory management features.',
+                'sub_title' => 'الخطوة 4',
+                'title' => 'أتمتة المخزون',
+                'description' => 'فعل تحديثات المخزون التلقائية، المخزون حسب المخزن، وميزات إدارة المخزون الذكية.',
             ],
         ];
 
