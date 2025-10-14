@@ -55,3 +55,8 @@ Route::any('/razorpay/failed/', [RazorpayPaymentController::class, 'paymentFaile
 Route::any('/paystack/payment-success', [PaystackPaymentController::class, 'paymentSuccess'])->name('paystack-success');
 
 include 'upgrade.php';
+
+
+Route::get('/check-mail', function() {
+    return env('MAIL_HOST');
+});
