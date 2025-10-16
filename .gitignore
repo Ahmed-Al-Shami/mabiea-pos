@@ -21,3 +21,4 @@ yarn-error.log
 !/public/import_demo_files
 public/js/app.js
 public/mix-manifest.json
+resources/pos/node_modules
